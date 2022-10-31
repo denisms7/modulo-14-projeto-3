@@ -29,7 +29,8 @@ body {
 }
 
 
-.sobre-o-restaurante {
+.sobre-o-restaurante,
+#cardapio {
     background-color: #ffeae6;
 }
 
@@ -37,7 +38,8 @@ body {
     color: #e15f41;
 }
 
-.nav-cardapio .nav-link.active {
+.nav-cardapio .nav-link.active,
+#contato button {
     background-color: #e15f41;
     color: #fff;
 }
@@ -45,3 +47,20 @@ body {
 .nav-cardapio .nav-link:hover { 
     color: #e15f41;;
 }
+
+.social-links {
+    list-style: none;
+    display: flex;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+
+@media (max-width: 767) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
+

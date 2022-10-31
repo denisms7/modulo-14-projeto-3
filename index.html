@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top py-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top py-2" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Nome do Restaurante</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" aria-current="page" href="#">
+                        <a class="nav-link" aria-current="page" href="#contato">
                             <i class="bi bi-chat-left-text me-1"></i>
                             Fale Conosco
                         </a>
@@ -55,7 +55,7 @@
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section id="">
             <div class="">
                 <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
@@ -91,7 +91,7 @@
                         <div class="col-md-5">
                             <img src="./img/restaurante.jpg" alt="foto" class="d-block w-100 rounded">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span class="texto-colorido">o Restaurante</span></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur harum impedit, et
                                 nam voluptatibus atque dolores esse magni similique. Dignissimos laborum vel nesciunt
@@ -152,10 +152,10 @@
             </div>
         </section>
 
-        <section id="cardapio" >
+        <section id="cardapio" class="py-5" >
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Nosso <span class="texto-colorido">Cardapio</span></h2>
+                    <h2 class="section-title text-center mb-5">Nosso <span class="texto-colorido">Cardapio</span></h2>
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
@@ -176,34 +176,13 @@
                                         <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
-
                                     <div class="col-md-3">
                                         <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
                                         <h5 class="texto-colorido fw-bold mt-2">Sucos</h5>
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
-                                    
-                                    <div class="col-md-3">
-                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
-                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                    
-                                    <div class="col-md-3">
-                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
-                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                    
-                                    <div class="col-md-3">
-                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
-                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
                                 </div>
                             </div>
-
-
 
                             <div class="tab-pane" id="bebidas-com-alcool">
                                 <div class="row">
@@ -219,7 +198,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="tab-pane" id="entradas">
                                 <div class="row">
@@ -240,7 +218,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="tab-pane" id="pratos">
                                 <div class="row">
@@ -271,12 +248,74 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="contato" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="texto-colorido">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form action="">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold texto-colorido" for="nome">Seu Nome</label>
+                                <input class="form-control"  type="text" id="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold texto-colorido" for="email">Seu Email</label>
+                                <input class="form-control"  type="email" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold texto-colorido" for="telefone">Seu Telefone (opcional)</label>
+                                <input class="form-control"  type="tel" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold texto-colorido" for="mensagem">Sua Mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title texto-colorido fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-facebook texto-colorido"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ">
+                                    <a href="">
+                                        <i class="bi bi-instagram texto-colorido ps-1 pe-1"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-whatsapp texto-colorido"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title texto-colorido fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Abascuara Num.: 666 Bairro Centro, Curitiba-PR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
