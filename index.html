@@ -11,34 +11,276 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <!-- Fonte Icone: https://icon-icons.com/ -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top">
+    <header class="navbar navbar-expand-lg sticky-top py-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand">Nome do Restaurante</h1>
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Cardapio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Fale Conosco</a>
-                </li>
-            </ul>
+            <h1 class="navbar-brand m-0 section-title">Nome do Restaurante</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" aria-current="page" href="#sobre-o-restaurante">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" aria-current="page" href="#eventos">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" aria-current="page" href="#cardapio">
+                            <i class="bi card-text me-1"></i>
+                            Cardapio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="">
+            <div class="">
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./img/slides/slide1.png" alt="slide1" class=" w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/slides/slide2.png" alt="slide2" class=" w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/slides/slide3.png" alt="slide3" class=" w-100">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="py-5 sobre-o-restaurante">
+                <div class="container" id="sobre-o-restaurante">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./img/restaurante.jpg" alt="foto" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title">Sobre <span class="texto-colorido">o Restaurante</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur harum impedit, et
+                                nam voluptatibus atque dolores esse magni similique. Dignissimos laborum vel nesciunt
+                                unde rem laudantium consequatur ab, consequuntur aut.</p>
+                            <h3 class="section-title">Sobre <span class="texto-colorido">o Espaco</span></h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non eos, placeat tempore, iure
+                                iste architecto inventore consectetur necessitatibus molestiae repellendus ullam. Veniam
+                                dicta est sapiente officiis in dolorum ad beatae!</p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="texto-colorido">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./img/eventos/aniversario.jpg" alt="aniversario" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title texto-colorido fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversarios
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dolore natus a inventore hic
+                            est quos nesciunt, doloribus veritatis sed, laborum ab dolorem debitis omnis rem at vel
+                            officia excepturi?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/eventos/casamento.jpg" alt="casamento" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title texto-colorido fs-4">
+                            <i class="bi bi-arrow-through-heart-fill "></i>
+                            Casamentos
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dolore natus a inventore hic
+                            est quos nesciunt, doloribus veritatis sed, laborum ab dolorem debitis omnis rem at vel
+                            officia excepturi?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/eventos/confraternizacoes.jpg" alt="confraternizacoes"
+                            class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title texto-colorido fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizacoes
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dolore natus a inventore hic
+                            est quos nesciunt, doloribus veritatis sed, laborum ab dolorem debitis omnis rem at vel
+                            officia excepturi?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" >
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Nosso <span class="texto-colorido">Cardapio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start texto-colorido nav-link active">Bebinas nao Alcoolicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-com-alcool" class="fw-bold text-start texto-colorido nav-link">Bebinas Alcoolicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start texto-colorido nav-link">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos" class="fw-bold text-start texto-colorido nav-link">Pratos Principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bold text-start texto-colorido nav-link">Sobremesa</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/coca-cola.jpg" alt="coca-cola" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Sucos</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/suco.jpg" alt="suco" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Coca-Cola</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
 
 
+
+                            <div class="tab-pane" id="bebidas-com-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/cerveja.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Cerveja</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/bebidas/vinho.jpg" alt="vinho" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Vinho</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/entradas/entrada.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/entradas/entrada.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/entradas/entrada.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Entrada</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="pratos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/pratos/pizza.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Pizza</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/pratos/salmao.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Salmao</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/sobremesas/bolo.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Bolos</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./img/cardapio/sobremesas/cupcake.jpg" alt="cerveja" class="w-100 d-block">
+                                        <h5 class="texto-colorido fw-bold mt-2">Cupcake</h5>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
 
     <script src="./libs/bootstrap.bundle.min.js"></script>
 </body>
